@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="/logo.svg" />
+    <title>Feedback | UnoCSS fanpage</title>
+  </head>
+
+  <body class="m-0 font-sans bg-black text-lighter">
+    <header class="flex items-end justify-center bg-dark w-full h-230px">
+      <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center">
+          <h1 class="m-0 text-5xl text-lighter">Feedback</h1>
+          <p class="mt-0 text-xl">(°ー°〃)</p>
+        </div>
+      </div>
+      <nav
+        id="nav"
+        class="flex flex-col items-center justify-center rounded-6 absolute top-15px right-0 bg-darker size-200px px-4"
+      >
+        <a class="nav-item" href="../index.html">Home</a>
+        <a class="nav-item" href="guide.html">Guide</a>
+        <a class="nav-item nav-item-active" href="feedback.html">Feedback</a>
+        <a class="nav-item" href="about.html">About</a>
+      </nav>
+      <div
+        id="menu"
+        class="i-solar:hamburger-menu-line-duotone size-10 absolute top-15px right-1 cursor-pointer"
+      ></div>
+    </header>
+
+    <main class="mt-5 flex gap-5 flex-col">
+      <h2 class="text-lg text-center">Share your experience with CSS!</h2>
+      <form
+        id="feedback"
+        class="flex flex-col items-center justify-center w-full md:w-2/5 m-a gap-5"
+      >
+        <div class="flex flex-col">
+          <label class="text-lg font-bold" for="name">Name</label>
+          <input
+            class="bg-dark text-lighter border-0 rounded-xl p-3 w-300px"
+            id="name"
+            type="text"
+          />
+        </div>
+        <div class="flex flex-col w-[calc(100%-1rem)] md:w-3/5">
+          <label class="text-lg font-bold" for="experience">
+            Tell us your experience
+          </label>
+          <textarea
+            class="bg-dark text-lighter border-0 rounded-xl p-3 h-150px"
+            id="experience"
+            type="text"
+          ></textarea>
+        </div>
+        <div class="flex flex-col">
+          <label class="text-lg font-bold">
+            Check the ones you've tried before
+          </label>
+          <div class="flex gap-2 items-center">
+            <input id="css" name="framework" type="checkbox" class="size-5" />
+            <label for="css" class="text-lg">CSS</label>
+          </div>
+          <div class="flex gap-2 items-center">
+            <input
+              id="bootstrap"
+              name="framework"
+              type="checkbox"
+              class="size-5"
+            />
+            <label for="bootstrap" class="text-lg">Bootstrap</label>
+          </div>
+          <div class="flex gap-2 items-center">
+            <input
+              id="tailwind"
+              name="framework"
+              type="checkbox"
+              class="size-5"
+            />
+            <label for="tailwind" class="text-lg">Tailwind</label>
+          </div>
+        </div>
+        <div class="block">
+          <label class="text-lg font-bold">
+            Will you give UnoCSS a try as well?
+          </label>
+          <div class="flex gap-2 items-center">
+            <input id="yes" name="unocss" type="radio" class="size-5" />
+            <label for="yes" class="text-lg">Yep</label>
+          </div>
+          <div class="flex gap-2 items-center">
+            <input id="no" name="unocss" type="radio" class="size-5" />
+            <label for="no" class="text-lg">Nop</label>
+          </div>
+        </div>
+        <div class="flex gap-5 mt-5 shadow-light:30">
+          <button type="submit" form="feedback" class="btn">Submit</button>
+          <button type="reset" form="feedback" class="btn">Reset</button>
+        </div>
+      </form>
+    </main>
+
+    <footer class="m-a rounded-t-full text-center py-2 mt-10 w-50% bg-dark">
+      <p class="m-0">
+        Made by
+        <a class="link" href="https://github.com/Rettend" target="_blank">
+          Rettend
+        </a>
+      </p>
+    </footer>
+  </body>
+  <script src="/index.js"></script>
+</html>

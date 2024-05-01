@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="/logo.svg" />
+    <title>Home | UnoCSS fanpage</title>
+  </head>
+
+  <body class="m-0 font-sans bg-black text-lighter">
+    <header class="flex items-center justify-center bg-dark w-full h-230px">
+      <div class="flex flex-col items-center justify-center">
+        <img
+          class="w-100px"
+          src="/logo.svg"
+          alt="unocss logo"
+          title="unocss logo"
+        />
+        <h1 class="m-0 text-5xl text-lighter">UnoCSS</h1>
+      </div>
+      <nav
+        id="nav"
+        class="hidden md:flex flex-col items-center justify-center rounded-6 absolute top-15px right-0 bg-darker size-200px px-4"
+      >
+        <a class="nav-item nav-item-active" href="index.html">Home</a>
+        <a class="nav-item" href="pages/guide.html">Guide</a>
+        <a class="nav-item" href="pages/feedback.html">Feedback</a>
+        <a class="nav-item" href="pages/about.html">About</a>
+      </nav>
+      <div
+        id="menu"
+        class="i-solar:hamburger-menu-line-duotone size-10 absolute top-15px right-1 cursor-pointer"
+      ></div>
+    </header>
+
+    <main class="mt-5 flex gap-5 flex-col items-center justify-center">
+      <div style="text-align: center">
+        <figure>
+          <video controls class="w-full md:w-560px" poster="thumbnail.webp">
+            <source src="/Tailwind CSS is the worst.mp4" type="video/mp4" />
+            video tag not supported by browser
+          </video>
+          <figcaption>
+            <p>
+              Video by
+              <a class="link" href="https://youtu.be/lHZwlzOUOZ4">Fireship</a>
+              about TailwindCSS. The
+              <a class="link" href="pages/transcription.html" target="_blank">
+                video transcription
+              </a>
+              is also available.
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <article>
+        <h2 class="text-lg text-center">
+          UnoCSS has the advantages of Tailwind without the drawbacks, rewritten
+          from the ground in an intelligent way.
+        </h2>
+      </article>
+
+      <section
+        class="flex flex-wrap gap-3 mx-2 w-full items-start justify-center my-5"
+      >
+        <div class="feature-col">
+          <div class="feature">
+            <div class="feature-title">
+              <div class="i-solar:fire-bold-duotone size-8"></div>
+              <h3>Instant</h3>
+            </div>
+            <p>Not 5x faster, not 200x faster, It's INSTANT</p>
+          </div>
+          <div class="feature">
+            <div class="feature-title">
+              <div class="i-solar:cat-bold-duotone size-8"></div>
+              <h3>200,000+ Icons</h3>
+            </div>
+            <p>Instantly access any icon</p>
+          </div>
+        </div>
+        <div class="feature-col">
+          <div class="feature">
+            <div class="feature-title">
+              <div class="i-solar:tuning-square-bold-duotone size-8"></div>
+              <h3>Fully Customizable</h3>
+            </div>
+            <p>Every class is defined with RegEx</p>
+          </div>
+          <div class="feature">
+            <div class="feature-title">
+              <div class="i-solar:widget-5-bold-duotone size-8"></div>
+              <h3>New Features</h3>
+            </div>
+            <p>
+              Attributify, shortcuts, <br />
+              variant groups
+            </p>
+          </div>
+        </div>
+        <div class="feature-col">
+          <div class="feature">
+            <div class="feature-title">
+              <div class="i-solar:plain-bold-duotone size-8"></div>
+              <h3>Lightweight</h3>
+            </div>
+            <p>Zero dependencies, 32kB unpacked</p>
+          </div>
+          <div class="feature">
+            <div class="feature-title">
+              <div class="i-solar:chat-square-code-bold-duotone size-8"></div>
+              <h3>Better DX</h3>
+            </div>
+            <p>VS Code extensions, inspector</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="m-a rounded-t-full text-center py-2 mt-10 w-50% bg-dark">
+      <p class="m-0">
+        Made by
+        <a class="link" href="https://github.com/Rettend" target="_blank">
+          Rettend
+        </a>
+      </p>
+    </footer>
+  </body>
+  <script src="/index.js"></script>
+</html>

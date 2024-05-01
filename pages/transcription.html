@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="/logo.svg" />
+    <title>Transcription | UnoCSS fanpage</title>
+  </head>
+  <body class="font-sans bg-black text-lighter">
+    It is January 16th, 2023, and you're watching The Code Report. Tailwind is
+    the worst way to do CSS, except for all the other ways that have been tried.
+    An epic war erupted yesterday after somebody had the audacity to post a
+    Tailwind snippet on Twitter. The Allied Tailwind Alliance defended this
+    code, while the Unified CSS Fundamentalists said horrible dehumanizing
+    things about it like it's not even real CSS. As a result, many insecure
+    nerds suffered slightly hurt feelings from hearing mild criticisms about
+    technology choices that their clients will never care about. It was truly
+    horrific. I decided to run a poll to see where you guys fall, and although
+    most have never tried it, four out of five people that have tried Tailwind
+    love it. Still though, it has its trade-offs and may not be a good fit for
+    every project. In this video, I want to explain the problems Tailwind solves
+    because it's obvious that many people don't even understand them, yet still
+    have no problem hating on a free and open source tool publicly. I personally
+    joined the Tailwind cult a couple years ago, after refusing to drink the
+    Kool-Aid for quite a while. In my experience, it's a tool like TypeScript or
+    Svelte that makes it really hard to go back to the thing you were using
+    before, because it saves a ton of time. And becoming a productive developer
+    is all about using your time wisely. The first problem with CSS is
+    co-location. The standard practice for the last 20 years has been to
+    separate your CSS from the markup to provide a good separation of concerns,
+    and doing otherwise means you go to hell. As programmers, we know the
+    hardest part of the job is naming things, and this practice requires you to
+    come up with a lot of arbitrary names that are often pointless. A few weeks
+    later when you come back to modify this code, it becomes difficult to figure
+    out which styles actually apply to each element, because you've totally
+    forgotten what these class names do. And you might have used these class
+    names in multiple places, so if you try to change it, it could break
+    unexpected parts of the UI. Tailwind addresses this problem by giving you
+    standard utility classes that are co-located in the HTML. This results in
+    disgusting, bloated HTML that looks like blasphemous inline styles at first
+    glance. And that's a very valid criticism, and likely the main turn-off for
+    people when they first look into using Tailwind. However, the benefit is
+    that you don't have all these arbitrary class names anymore, and know
+    exactly which styles apply to it. And that just clears a ton of mental
+    overhead from your plate. You can make modifications safely without breaking
+    other parts of the app. Also, here's a little pro tip. If you're using
+    Tailwind and hate the way your HTML looks, the inline fold vs code extension
+    can automatically minimize it for you. Problem number two is that CSS is
+    verbose. Remember everything in Tailwind is just CSS. Hover over any class
+    to view the actual CSS code. What's cool about it though is that it uses
+    clever naming conventions like inset zero to do something in one line of
+    code that would take six lines of CSS, because it combines properties and
+    values together. I would estimate that tailwind results in approximately
+    one-third the total amount of code that you would have with vanilla CSS, and
+    the best type of code is the code you never have to write. However, a valid
+    criticism of this approach is that you have to learn an abstraction on top
+    of CSS, which is not ideal. It's always best to use the platform natively,
+    but the web platform is often cruel and vengeful. Now, problem three is that
+    CSS gives you too much control over the UI, while frameworks like Bootstrap
+    are too difficult to customize. Tailwind falls right in the middle of these,
+    giving you a standard set of constraints to make sure the UI looks good, but
+    tends to be much easier to customize to accommodate any design. Like when
+    you build a Bootstrap app, it always tends to look like a bootstrap app.
+    With Tailwind, it's not so obvious. Now the final problem I want to talk
+    about is zombie styles. We have a tendency to write styles that never
+    actually get used, and just bloat the CSS bundle. Tailwind will
+    automatically purge all unused styles to kill the zombies and remove this
+    dead code. That's pretty cool, but the drawback is that Tailwind is a pretty
+    heavy-handed approach. It takes like five steps to set up to install the
+    Tailwind CLI, PostCSS, and the VS Code extension. For that reason, I only
+    use it on big projects. For smaller demos, I've been using PicoCSS, which
+    can make things look good with zero effort thanks to its classless approach.
+    As you can see, there are many pros and cons to a library like Tailwind.
+    Ultimately, here's a good rule you can go by. If you like Tailwind, use it.
+    If you don't like Tailwind, don't use it. Nobody cares. Literally nobody
+    cares about your technology choices except you. This has been The Code
+    Report. Thanks for watching, and I will see you in the next one.
+  </body>
+</html>

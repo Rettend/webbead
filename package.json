@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "dev": "bun run.ts",
+    "build": "bun build index.ts --outfile=index.js",
+    "lint": "eslint . --fix"
+  },
+  "dependencies": { "signal-polyfill": "^0.1.0" },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.16.0",
+    "@iconify-json/solar": "^1.1.9",
+    "@types/bun": "^1.0.12",
+    "eslint": "^8.1.1",
+    "eslint-plugin-format": "^0.1.1",
+    "unocss": "^0.59.0-beta.1",
+    "vite": "^5.2.8"
+  }
+}

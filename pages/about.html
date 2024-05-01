@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="/logo.svg" />
+    <title>About | UnoCSS fanpage</title>
+  </head>
+
+  <body class="m-0 font-sans bg-black text-lighter">
+    <header class="flex items-end px-4 justify-center bg-dark w-full h-230px">
+      <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center">
+          <h1 class="m-0 text-5xl text-lighter">About</h1>
+          <p class="mt-0 text-xl">(•ˋ _ ˊ•)</p>
+        </div>
+      </div>
+      <nav
+        id="nav"
+        class="flex flex-col items-center justify-center rounded-6 absolute top-15px right-0 bg-darker size-200px px-4"
+      >
+        <a class="nav-item" href="../index.html">Home</a>
+        <a class="nav-item" href="guide.html">Guide</a>
+        <a class="nav-item" href="feedback.html">Feedback</a>
+        <a class="nav-item nav-item-active" href="about.html">About</a>
+      </nav>
+      <div
+        id="menu"
+        class="i-solar:hamburger-menu-line-duotone size-10 absolute top-15px right-1 cursor-pointer"
+      ></div>
+    </header>
+
+    <main class="mt-5 flex gap-5 flex-col items-center justify-center">
+      <div class="flex flex-col gap-5 justify-center">
+        <h2 class="text-lg text-center">This page was created by:</h2>
+        <div class="flex flex-wrap gap-5 justify-center">
+          <img
+            class="w-140px"
+            src="/rettend.png"
+            alt="Rettend profile picture"
+            title="Rettend profile picture"
+          />
+          <div>
+            <h3>Rettend</h3>
+            <p>
+              TypeScript ninja <br />
+              Frontend performance enthusiast
+            </p>
+          </div>
+        </div>
+        <h2 class="text-lg text-center">UnoCSS creator:</h2>
+        <div class="flex flex-wrap gap-5 justify-center">
+          <img
+            class="w-140px"
+            src="/antfu.png"
+            alt="Antfu profile picture"
+            title="Antfu profile picture"
+          />
+          <div>
+            <h3>Anthony Fu</h3>
+            <p>
+              Fanatical open sourceror <br />
+              Vite, Vue, Nuxt core team member
+            </p>
+          </div>
+        </div>
+        <p class="text-center text-lg">+280 others</p>
+      </div>
+    </main>
+
+    <footer class="m-a rounded-t-full text-center py-2 mt-10 w-50% bg-dark">
+      <p class="m-0">
+        Made by
+        <a class="link" href="https://github.com/Rettend" target="_blank">
+          Rettend
+        </a>
+      </p>
+    </footer>
+  </body>
+  <script src="/index.js"></script>
+</html>
