@@ -402,6 +402,13 @@ var w2 = new B.subtle.Watcher(() => {
 });
 
 // index.ts
+var watch = function(selector, callback) {
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(selector).forEach((node) => {
+      node.addEventListener("click", callback);
+    });
+  });
+};
 var isDesktop = window.matchMedia("(min-width: 1024px)").matches;
 var isNavVisible = new B.State(isDesktop);
 document.getElementById("menu")?.addEventListener("click", () => {
@@ -416,3 +423,5 @@ effect(() => {
   else
     nav.style.display = "none";
 });
+watch(".img-magnifier-node", () => document.documentElement.classList.add("hide-scrollbar"));
+watch(".img-magnifier", () => document.documentElement.classList.remove("hide-scrollbar"));

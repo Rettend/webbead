@@ -8,6 +8,8 @@ import {
 
 export default defineConfig({
   shortcuts: {
+    'img-magnifier': 'hidden target:flex justify-center items-center bg-black:80 cursor-pointer absolute m-a top-0 bottom-0 left-0 right-0 w-full z-10',
+    'img-magnifier-node': 'w-full cursor-pointer hover:scale-105 transition-all',
     'btn': 'w-26 bg-dark text-lighter shadow-[4px_4px_0] cursor-pointer text-lg border-0 rounded-xl px-4 py-2 transition-all hover:translate--0.5 hover:shadow-[6px_6px_0] active:translate-1 active:shadow-[0px_0px_0]',
     'feature': 'bg-dark px-4 py-2 rounded-6 w-270px',
     'feature-title': 'flex gap-3 items-center',
@@ -45,7 +47,11 @@ export default defineConfig({
   width: 100dvw;
   overflow-x: hidden;
 }
-      `,
+
+.hide-scrollbar {
+  overflow-y: hidden;
+}
+`,
     },
   ],
   cli: {

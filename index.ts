@@ -18,3 +18,14 @@ effect(() => {
   else
     nav.style.display = 'none'
 })
+
+function watch(selector: string, callback: () => void) {
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll(selector).forEach((node) => {
+      node.addEventListener('click', callback)
+    })
+  })
+}
+
+watch('.img-magnifier-node', () => document.documentElement.classList.add('hide-scrollbar'))
+watch('.img-magnifier', () => document.documentElement.classList.remove('hide-scrollbar'))
