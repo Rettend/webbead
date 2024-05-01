@@ -9,6 +9,9 @@
   </head>
 
   <body class="m-0 font-sans bg-black text-lighter text-base">
+    <a class="sr-only focus:not-sr-only focus:absolute" href="#main"
+      >Skip to content</a
+    >
     <header class="flex items-end justify-center bg-dark w-full h-230px">
       <div class="flex flex-col items-center justify-center">
         <div class="flex flex-col items-center">
@@ -31,7 +34,7 @@
       ></div>
     </header>
 
-    <main class="mt-5 flex gap-5 flex-col">
+    <main id="main" class="mt-5 flex gap-5 flex-col">
       <h2 class="text-lg text-center">Share your experience with CSS!</h2>
       <form
         id="feedback"
@@ -53,7 +56,6 @@
           <textarea
             class="bg-dark text-lighter border-0 rounded-xl p-3 h-150px text-base font-sans"
             id="experience"
-            type="text"
             maxlength="250"
           ></textarea>
         </div>

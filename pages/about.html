@@ -9,6 +9,9 @@
   </head>
 
   <body class="m-0 font-sans bg-black text-lighter text-base">
+    <a class="sr-only focus:not-sr-only focus:absolute" href="#main"
+      >Skip to content</a
+    >
     <header class="flex items-end justify-center bg-dark w-full h-230px">
       <div class="flex flex-col items-center justify-center">
         <div class="flex flex-col items-center">
@@ -31,7 +34,10 @@
       ></div>
     </header>
 
-    <main class="mt-5 flex gap-5 flex-col items-center justify-center">
+    <main
+      id="main"
+      class="mt-5 flex gap-5 flex-col items-center justify-center"
+    >
       <div class="flex flex-col gap-5 justify-center">
         <h2 class="text-lg text-center">This page was created by:</h2>
         <section class="flex flex-wrap gap-5 justify-center">
@@ -65,7 +71,15 @@
             </p>
           </div>
         </section>
-        <p class="text-center text-lg">+280 others</p>
+        <section class="flex flex-col flex-wrap justify-center items-center">
+          <p class="text-center text-lg">+300 others</p>
+          <img
+            class="w-full md:w-50% rounded"
+            src="../public/contributors.png"
+            alt="All of the UnoCSS contributors in one image"
+            title="All of the UnoCSS contributors in one image"
+          />
+        </section>
       </div>
     </main>
 

@@ -9,6 +9,9 @@
   </head>
 
   <body class="m-0 font-sans bg-black text-lighter text-base">
+    <a class="sr-only focus:not-sr-only focus:absolute" href="#main"
+      >Skip to content</a
+    >
     <header class="flex items-center justify-center bg-dark w-full h-230px">
       <div class="flex flex-col items-center justify-center">
         <div
@@ -31,7 +34,10 @@
       ></div>
     </header>
 
-    <main class="mt-5 flex gap-5 flex-col items-center justify-center">
+    <main
+      id="main"
+      class="mt-5 flex gap-5 flex-col items-center justify-center"
+    >
       <div style="text-align: center">
         <figure>
           <video
@@ -40,7 +46,7 @@
             poster="public/thumbnail.webp"
           >
             <source
-              src="public/Tailwind CSS is the worst.mp4"
+              src="public/Tailwind_CSS_is_the_worst.mp4"
               type="video/mp4"
             />
             video tag not supported by browser
