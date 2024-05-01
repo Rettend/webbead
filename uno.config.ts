@@ -14,7 +14,7 @@ export default defineConfig({
     'feature': 'bg-dark px-4 py-2 rounded-6 w-270px',
     'feature-title': 'flex gap-3 items-center',
     'feature-col': 'flex flex-col gap-3',
-    'link': 'inline-block text-pink visited:text-purple hover:text-lighter active:text-light',
+    'link': 'inline-block text-purple visited:text-pink hover:text-lighter active:text-light',
     'nav-item': 'decoration-none text-lighter font-bold text-xl hover:scale-110 transition-all rounded-full py-1 px-2',
     'nav-item-active': 'bg-lighter text-darker hover:scale-100',
   },

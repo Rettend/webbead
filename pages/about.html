@@ -8,8 +8,8 @@
     <title>About | UnoCSS fanpage</title>
   </head>
 
-  <body class="m-0 font-sans bg-black text-lighter">
-    <header class="flex items-end px-4 justify-center bg-dark w-full h-230px">
+  <body class="m-0 font-sans bg-black text-lighter text-base">
+    <header class="flex items-end justify-center bg-dark w-full h-230px">
       <div class="flex flex-col items-center justify-center">
         <div class="flex flex-col items-center">
           <h1 class="m-0 text-5xl text-lighter">About</h1>
@@ -18,7 +18,7 @@
       </div>
       <nav
         id="nav"
-        class="flex flex-col items-center justify-center rounded-6 absolute top-15px right-0 bg-darker size-200px px-4"
+        class="flex flex-col items-center justify-center md:rounded-6 absolute top-15px right-0 bg-darker h-200px w-full md:w-200px md:px-4"
       >
         <a class="nav-item" href="../index.html">Home</a>
         <a class="nav-item" href="guide.html">Guide</a>
@@ -34,12 +34,12 @@
     <main class="mt-5 flex gap-5 flex-col items-center justify-center">
       <div class="flex flex-col gap-5 justify-center">
         <h2 class="text-lg text-center">This page was created by:</h2>
-        <div class="flex flex-wrap gap-5 justify-center">
+        <section class="flex flex-wrap gap-5 justify-center">
           <img
             class="w-140px"
             src="../public/rettend.png"
-            alt="Rettend profile picture"
-            title="Rettend profile picture"
+            alt="Rettend's profile picture"
+            title="Rettend's profile picture"
           />
           <div>
             <h3>Rettend</h3>
@@ -48,14 +48,14 @@
               Frontend performance enthusiast
             </p>
           </div>
-        </div>
+        </section>
         <h2 class="text-lg text-center">UnoCSS creator:</h2>
-        <div class="flex flex-wrap gap-5 justify-center">
+        <section class="flex flex-wrap gap-5 justify-center">
           <img
             class="w-140px"
             src="../public/antfu.png"
-            alt="Antfu profile picture"
-            title="Antfu profile picture"
+            alt="Antfu's profile picture"
+            title="Antfu's profile picture"
           />
           <div>
             <h3>Anthony Fu</h3>
@@ -64,7 +64,7 @@
               Vite, Vue, Nuxt core team member
             </p>
           </div>
-        </div>
+        </section>
         <p class="text-center text-lg">+280 others</p>
       </div>
     </main>

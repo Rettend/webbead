@@ -8,7 +8,7 @@
     <title>Feedback | UnoCSS fanpage</title>
   </head>
 
-  <body class="m-0 font-sans bg-black text-lighter">
+  <body class="m-0 font-sans bg-black text-lighter text-base">
     <header class="flex items-end justify-center bg-dark w-full h-230px">
       <div class="flex flex-col items-center justify-center">
         <div class="flex flex-col items-center">
@@ -18,7 +18,7 @@
       </div>
       <nav
         id="nav"
-        class="flex flex-col items-center justify-center rounded-6 absolute top-15px right-0 bg-darker size-200px px-4"
+        class="flex flex-col items-center justify-center md:rounded-6 absolute top-15px right-0 bg-darker h-200px w-full md:w-200px md:px-4"
       >
         <a class="nav-item" href="../index.html">Home</a>
         <a class="nav-item" href="guide.html">Guide</a>
@@ -40,9 +40,10 @@
         <div class="flex flex-col">
           <label class="text-lg font-bold" for="name">Name</label>
           <input
-            class="bg-dark text-lighter border-0 rounded-xl p-3 w-300px"
+            class="bg-dark text-lighter border-0 rounded-xl p-3 w-300px text-base font-sans"
             id="name"
             type="text"
+            maxlength="50"
           />
         </div>
         <div class="flex flex-col w-[calc(100%-1rem)] md:w-3/5">
@@ -50,15 +51,16 @@
             Tell us your experience
           </label>
           <textarea
-            class="bg-dark text-lighter border-0 rounded-xl p-3 h-150px"
+            class="bg-dark text-lighter border-0 rounded-xl p-3 h-150px text-base font-sans"
             id="experience"
             type="text"
+            maxlength="250"
           ></textarea>
         </div>
         <div class="flex flex-col">
-          <label class="text-lg font-bold">
+          <p class="text-lg font-bold my-1">
             Check the ones you've tried before
-          </label>
+          </p>
           <div class="flex gap-2 items-center">
             <input id="css" name="framework" type="checkbox" class="size-5" />
             <label for="css" class="text-lg">CSS</label>
@@ -83,9 +85,9 @@
           </div>
         </div>
         <div class="block">
-          <label class="text-lg font-bold">
+          <p class="text-lg font-bold my-1">
             Will you give UnoCSS a try as well?
-          </label>
+          </p>
           <div class="flex gap-2 items-center">
             <input id="yes" name="unocss" type="radio" class="size-5" />
             <label for="yes" class="text-lg">Yep</label>
