@@ -1,3 +1,5 @@
+// REFERENCE ONLY. THIS IS THE SOURCE OF index.js
+
 import { Signal } from 'signal-polyfill'
 import { effect } from './effect.js'
 
